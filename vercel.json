@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/(.*\\.html|.*\\.css|.*\\.js|.*\\.jpg|.*\\.png|.*\\.svg|.*\\.json)",
+      "dest": "/dist/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/dist/index.html"
     }
